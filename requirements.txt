@@ -1,0 +1,22 @@
+ipykernel        # Needed to run Jupyter notebooks; provides the Python kernel interface
+pandas           # Data manipulation and analysis; tabular dataframes for preprocessing
+numpy            # Numerical computing; arrays, linear algebra, math operations
+matplotlib       # Core plotting library; static visualizations like line/bar/scatter plots
+plotly           # Interactive visualizations; dashboards and dynamic charts
+seaborn          # Statistical data visualization; built on matplotlib, easier styling
+scikit-learn     # Machine learning algorithms; training, evaluation, preprocessing utilities
+pymongo          # Connect and interact with MongoDB databases; for data ingestion/storage
+from_root        # Utility to resolve project paths from root directory; simplifies imports
+dill             # Serialization library; saves Python objects (models, functions) beyond pickle
+certifi          # Provides SSL certificates; ensures secure HTTPS connections for APIs
+PyYAML           # Read/write YAML config files; useful for schema, model, pipeline configs
+boto3            # AWS SDK for Python; interact with S3, EC2, and other AWS services
+mypy-boto3-s3    # Type hints for boto3 S3 client; improves IDE autocompletion and static typing
+botocore         # Low-level core library for boto3; handles AWS request/response logic
+fastapi          # Web framework for building APIs; serve ML models as REST endpoints
+python-multipart # Handles file uploads in FastAPI; required for multipart/form-data requests
+uvicorn          # ASGI server to run FastAPI apps; lightweight and production-ready
+jinja2           # Templating engine; used by FastAPI for rendering HTML templates
+imblearn         # Imbalanced-learn; resampling techniques (SMOTE, undersampling) for skewed datasets
+
+-e .   # Editable mode means your own project is installed as a package, so code changes are reflected immediately without reinstalling
