@@ -26,16 +26,17 @@ def error_message_detail(error: Exception, error_detail: sys) -> str:
 
 class MyException(Exception):
     """
-    Custom exception class for handling errors in the US visa application.
+    Custom exception class for handling errors in the Vehicle Insurance project.
     """
+
     def __init__(self, error_message: str, error_detail: sys):
         """
-        Initializes the USvisaException with a detailed error message.
+        Initializes the VehicleInsuranceException with a detailed error message.
 
         :param error_message: A string describing the error.
         :param error_detail: The sys module to access traceback details.
         """
-        # Call the base class constructor with the error message
+        # Call the base class constructor with the error message calling the constructor of Exception, the parent class.
         super().__init__(error_message)
 
         # Format the detailed error message using the error_message_detail function
